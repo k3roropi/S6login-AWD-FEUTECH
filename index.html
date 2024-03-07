@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+<body>
+<div class="form-container">
+    <div class="form-btn">
+        <span class="l" onclick="login()">Log In</span>
+        <span class="s" onclick="register()">Sign Up</span>
+        <hr id="Indicator">
+    </div>
+
+    <form id="LoginForm">
+        <input type="text" placeholder="Enter email or username" required>
+        <input type="password" placeholder="Enter password" required>
+        <button type="submit" class="btn">Login</button>
+        <a class="d" onclick="register()">Forgot password</a>
+        <hr class="h">
+        <div class="social-icons">
+            <a href="https://myaccount.google.com/" class="social-btn">
+                <img src="./Assets/Images/google.png" alt="Google" class="social-icon">
+                Sign In With Google
+            </a>
+            <a href="https://ph.linkedin.com/" class="social-btn">
+                <img src="./Assets/Images/linkedin.png" alt="LinkedIn" class="social-icon">
+                Sign In With LinkedIn
+            </a>
+            <a href="https://account.microsoft.com/account/manage-my-account" class="social-btn">
+                <img src="./Assets/Images/microsoft.png" alt="Microsoft" class="social-icon">
+                Sign In With Microsoft
+            </a>
+        </div>
+    </form>
+    
+    <form id="RegForm" style="display:none">
+        <p class="x">Please fill in this form to create an account!</p>
+        <hr class="j">
+        <input type="text" placeholder="First Name" name="firstName" required>
+        <input type="text" placeholder="Last Name" name="lastName" required>
+        <input type="email" placeholder="Email" name="email" required>
+        <input type="password" placeholder="Password" name="password" required>
+        <input type="password" placeholder="Confirm Password" name="confirmPassword" required>
+        <div class="checkbox-container">
+            <input id="termsCheckbox" type="checkbox" class="checkbox" required>
+            <label for="termsCheckbox" class="checkbox-label">I accept the <a href="https://policies.google.com/terms">Terms of Use</a> & <a href="https://policies.google.com/privacy">Privacy Policy</a></label>
+        </div>
+        <button type="submit" class="btn">Sign Up</button> 
+    </form>
+</div>
+
+<div class="footer-container">
+    <hr class="footer-line">
+    <div class="footer-text">
+       <span id="current-year"></span> @2024 Capistrano, Redd G.
+    </div>
+</div>
+
+<script src="Assets/JS/script.js"></script>
+</body>
+</html>
